@@ -8,7 +8,8 @@ export default new Vuex.Store({
     enemyStats: {
       hp: 100,
       name: 'Great Grey Wolf Sif'
-    }
+    },
+    level: 1
   },
   
   mutations: {
@@ -20,7 +21,11 @@ export default new Vuex.Store({
 
   getters: {
     enemyHP(state) {
-      return state.enemyStats.hp
+      return state.enemyStats.hp;
+    },
+    
+    currentLevel(state) {
+      return state.level;
     }
   }
 })

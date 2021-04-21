@@ -23,6 +23,7 @@ import Inventory from './components/Inventory.vue';
 import icons from './assets/icons';
 import {mapGetters} from 'vuex';
 import HitText from './components/HitText.vue';
+import enemies from './assets/enems/enemies';
 
 export default {
   name: 'App',
